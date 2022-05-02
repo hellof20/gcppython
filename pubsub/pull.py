@@ -1,10 +1,10 @@
 from concurrent.futures import TimeoutError
 from google.cloud import pubsub_v1
 
-#project_id = "speedy-victory-336109"
-#subscription_id = "mysql-slow-query"
-project_id = "ultra-compound-305409"
-subscription_id = "mysub"
+project_id = "speedy-victory-336109"
+subscription_id = "mysql-slow-query"
+#project_id = "ultra-compound-305409"
+#subscription_id = "mysub"
 subscriber = pubsub_v1.SubscriberClient()
 subscription_path = subscriber.subscription_path(project_id, subscription_id)
 
